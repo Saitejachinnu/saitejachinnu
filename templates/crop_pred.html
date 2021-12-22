@@ -1,0 +1,67 @@
+<html>
+  <head>
+  <title>Agri Amigo</title>  
+  </head>
+
+  <body>
+    <center>
+      <h1>crop prediction</h1>
+
+      <form method="POST" , action="{{url_for('crop_pred')}}">
+        <b>
+          Nitrogen :
+          <input type="text" , name="N" , placeholder="enter nitrogen content" />
+          <br /><br />
+          Phosphorus :
+          <input
+            type="text"
+            ,
+            name="P"
+            ,
+            placeholder="enter phosphorus content"
+          />
+          <br /><br />
+          Potassium :
+          <input
+            type="text"
+            ,
+            name="K"
+            ,
+            placeholder="enter potassium content"
+          />
+          <br /><br />
+          Temperature :
+          <input
+            type="text"
+            ,
+            name="Temp"
+            ,
+            placeholder="enter temperature value"
+          />
+          <br /><br />
+          Humidity :
+          <input
+            type="text"
+            ,
+            name="Humid"
+            ,
+            placeholder="enter humidity value"
+          />
+          <br /><br />
+          Ph :
+          <input type="text" , name="Ph" , placeholder="enter ph value" />
+          <br /><br />
+          Rainfall :
+          <input
+            type="text"
+            ,
+            name="Rain"
+            ,
+            placeholder="enter rainfall readings"
+          />
+        </b>
+        <input type="submit" , value="predict!" />
+      </form>
+    </center>
+  </body>
+</html>

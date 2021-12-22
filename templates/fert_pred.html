@@ -1,0 +1,81 @@
+<html>
+    <head>
+      <title>Agri Amigo</title>
+        <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      </head>
+  
+
+  <body>
+    <center>
+      <h1>Fertilizer prediction</h1>
+      <form method="POST" , action="{{url_for('fert_pred')}}">
+      <b>
+        Temp value :
+        <input type="" , name="a" , placeholder="enter 1" /> <br /><br />
+        Humidity value :
+        <input type="text" , name="b" , placeholder="enter 2" /> <br /><br />
+        Moisture value :
+        <input type="text" , name="c" , placeholder="enter 3" /> <br /><br />
+        
+
+
+        <div class="form-row">
+          <div class="col-md-6">
+            <label for="validationCustom04">Soil Type value :</label>
+            <select class="custom-select" id="validationCustom04" name="d" required>
+              <option selected disabled value="">Choose...</option>
+              <option value=0>Black</option>
+              <option value=1>Clayey</option>
+              <option value=2>Loamy</option>
+              <option value=3>Red</option>
+              <option value=4>Sandy</option>
+              
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>  
+        </div>
+
+        
+
+        <div class="form-row">
+          <div class="col-md-6">
+            <label for="validationCustom04">Crop Type value :</label>
+            <select class="custom-select" id="validationCustom04" name="e" required>
+              <option selected disabled value="">Choose...</option>
+              <option value=0>Barley</option>
+              <option value=1>Cotton</option>
+              <option value=2>Ground Nuts</option>
+              <option value=3>Maize</option>
+              <option value=4>Millets</option>
+              <option value=5>Oil Seeds</option>
+              <option value=6>Paddy</option>
+              <option value=7>Pulses</option>
+              <option value=8>Sugaarcane</option>
+              <option value=9>tobacco</option>
+              <option value=10>Wheat</option>
+              
+              
+              
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid state.
+            </div>
+          </div>  
+        </div>
+        
+
+        Nitrogen value :
+        <input type="text" , name="f" , placeholder="enter 1" /> <br /><br />
+        Potassium value :
+        <input type="text" , name="g" , placeholder="enter 1" /> <br /><br />
+        Phosphorous value :
+        <input type="text" , name="h" , placeholder="enter 1" /> <br /><br />
+      </b>
+      <input type="submit" , value="predict!" />
+      </form>
+    </center>
+  </body>
+</html>
